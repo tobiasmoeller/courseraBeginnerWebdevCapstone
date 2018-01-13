@@ -66,6 +66,36 @@ h1 {
   padding-top: 8px;
 }
 
+.main p {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.main h1 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.main h2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.main h3 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.main figcaption {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+footer p {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
 h2 {
   color: #12355B;
 }
