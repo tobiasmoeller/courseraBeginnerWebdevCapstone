@@ -3,14 +3,15 @@
 <!--
 New features that "demonstrate ability to apply web design theory or practice" as required by the assignment
 
-1) carousel with clickable images as links to the site; top margin is dynamically set via js in a way that header does not overlay carousel. Although the header size does not change with different screen sizes, I wanted to avoid overlap of elements and wanted to create a general solution for later
+1) carousel with clickable images as links to the site; top margin is dynamically set via js in a way that header does not overlay carousel. Although the header size does not change with different screen sizes, I wanted to avoid overlap of elements and wanted to create a general solution for later. The same was done for the introductory images
 2) sticky footer
 3) use google fonts
 4) using font awesome to display meaningful icons in the header when on small display to replace title in header
 5) nav bar fixed at the top
 6) lightbox
-7) to do: change layout with different screen sizes
-8) to do: change text color on images based on background color to ensure readability
+7) change text color on images based on background color to ensure readability in carousel caption
+
+Since I was not sure if all of the features would qualify as sufficient, I did more that the required amount
 
 -->
 
@@ -91,7 +92,7 @@ New features that "demonstrate ability to apply web design theory or practice" a
       <!-- Carousel at the beginning that also acts as links -->
       <div class="carousel slide" id="introductionCarousel" data-ride="carousel" data-interval="false" style="margin-top: 10px">
         <script>
-        carouselMargin('introductionCarousel', 'navSticky');
+        topMargin('introductionCarousel', 'navSticky');
         </script>
         <!-- carousel indicators -->
         <ol class="carousel-indicators">
