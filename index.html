@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<!--
+New features that "demonstrate ability to apply web design theory or practice" as required by the assignment
+
+1) carousel with clickable images as links to the site; top margin is dynamically set via js in a way that header does not overlay carousel. Although the header size does not change with different screen sizes, I wanted to avoid overlap of elements and wanted to create a general solution for later
+2) sticky footer
+3) use google fonts
+4) using font awesome to display meaningful icons in the header when on small display to replace title in header
+5) nav bar fixed at the top
+6) lightbox
+7) to do: change layout with different screen sizes
+8) to do: change text color on images based on background color to ensure readability
+
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>A Desk Setup about Ergonomics - Home</title>
+
+  <!-- Bootstrap Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700%7CRoboto:400,500,700" rel="stylesheet">
+
+  <!-- linking to my own stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  <!-- linking to lightbox stylesheet -->
+  <link rel="stylesheet" href="css/lightbox.css">
+
+  <!-- linking to font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+  <!-- linking to javascript file -->
+  <script src="js/javascript.js"></script>
+
+
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light" id="navSticky">
+      <!-- Show heading when space is available -->
+      <a class="navbar-brand d-none d-md-block" href="index.html">A Desk Setup with Ergonomics in Mind</a>
+      <!-- Only show icon when screen space is limited -->
+      <a class="navbar-brand d-md-none d-sm-block" href="index.html"><i class="fas fa-desktop"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Digital</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+              <a class="dropdown-item nav-link" href="digital.html">Overview</a>
+              <a class="dropdown-item nav-link" href="digital.html#keyboard">Keyboard</a>
+              <a class="dropdown-item nav-link snd-level" href="digital.html#mk">Mechanical Keyboards</a>
+              <a class="dropdown-item nav-link snd-level" href="digital.html#layout">Alternative Keyboard Layouts</a>
+              <a class="dropdown-item nav-link snd-level" href="digital.html#ergo">Ergonomics</a>
+              <a class="dropdown-item nav-link snd-level" href="digital.html#sol">My Solution</a>
+              <a class="dropdown-item nav-link" href="digital.html#mouse">Mouse</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analog</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+              <a class="dropdown-item nav-link" href="analog.html">Overview</a>
+              <a class="dropdown-item nav-link" href="analog.html#fp">Fountain Pen</a>
+              <a class="dropdown-item nav-link" href="analog.html#bj">Bullet Journal</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="main">
+    <section>
+      <!-- Carousel at the beginning that also acts as links -->
+      <div class="carousel slide" id="introductionCarousel" data-ride="carousel" data-interval="false" style="margin-top: 10px">
+        <script>
+        carouselMargin('introductionCarousel', 'navSticky');
+        </script>
+        <!-- carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#introductionCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#introductionCarousel" data-slide-to="1"></li>
+        </ol>
+        <!-- carousel content -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="digital.html">
+              <img src="https://cdn.shopify.com/s/files/1/1152/3264/products/9006f9445697a6ef7f592751d4e02487.jpg?v=1492776831" alt="Keyboard" class="d-block w-100"> <div class="carousel-caption d-none d-md-block">
+                <p>Digital</p>
+                <p>Learn more about my keyboard and mouse setup</p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="analog.html">
+              <img src="https://cdn-tp1.mozu.com/6639-8588/cms/8588/files/03ab6897-52f1-463a-b543-e18a22ae31c1" alt="Pen and Paper" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Analog</p>
+                <p>Learn more about why I use a fountain pen and paper</p>
+              </div>
+            </a>
+          </div>
+          <!-- carousel controls -->
+          <a class="carousel-control-prev" href="#introductionCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Prev</span>
+          </a>
+          <a class="carousel-control-next" href="#introductionCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="main" id="introduction">
+      <h1>Introduction</h1>
+      <p>I created this site as the capstone project of the Coursera course <a href="https://www.coursera.org/learn/web-design-project">Web Design for Everybody</a> which is the last course of the <a href="https://www.coursera.org/specializations/web-design">Web Design for Everybody (Basics of Web Development and Coding) Specialization</a>. This site is meant to tell you about my experiences while trying to find a work setup that suits my style. Some time ago, I began to feel pain on the outside of my left wrist. It wasn't RSI (repetitive strain injury) or anything like that but it was alarming nonetheless. This is why I went online to do some research as to what might be causing the pain as well as how I could avoid it possibly turning into something more serious. This site contains information about what tools I use to work digitally and in the analog world as well as some explanation as to what my thought process has been to arrive at my final setup.</p>
+      <p>I hope that my experiences on the subject might allow someone to get inspiration on how to deal with creating an ergonomic workspace.</p>
+      <p>DISCLAIMER: I am not a physician or expert of any sort on this topic; what works for me does not have to work for you. Listen to your body!</p>
+    </section>
+  </section>
+
+
+  <footer class="footer">
+    <p>This website was created for the Coursera course <a href="https://www.coursera.org/learn/web-design-project">Web Design for Everybody</a>.
+      All images of keyboards used with kind permission of <a href="https://ergodox-ez.com/">Ergodox EZ</a>. All images of fountain pens and stationary used with kind permission of <a href="https://www.gouletpens.com/">The Goulet Pen Company</a>. All keyboard layouts created using <a href="http://www.keyboard-layout-editor.com/">keyboard layout editor</a>. The <a href="https://github.com/lokesh/lightbox2">Lightbox plugin</a> by <a href="http://www.lokeshdhakar.com/">Lokesh Dhakar</a> licensed under the <a href="https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE">MIT license</a> was used.</p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- lightbox js -->
+    <script src="js/lightbox-plus-jquery.js"></script>
+
+  </body>
+  </html>

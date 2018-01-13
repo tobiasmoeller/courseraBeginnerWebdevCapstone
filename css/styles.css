@@ -1,0 +1,159 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #e9f7ff;
+}
+
+.main {
+  flex: 1;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #12355B;
+}
+
+.navbar-light .navbar-brand {
+  color: #12355B;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #12355B;
+}
+
+.carousel-inner > .carousel-item > img {
+  max-width: 1024px;
+}
+
+.carousel {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.fa-search {
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .navbar-right {
+    width: 50%;
+  }
+}
+
+
+.carousel p {
+  color: #ffffff;
+  color: #12355B;
+  text-align: center;
+}
+
+h1 {
+  color: #12355B;
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px solid #12355B;
+}
+
+.main > p:first-of-type {
+  padding-top: 8px;
+}
+
+h2 {
+  color: #12355B;
+}
+
+li {
+  color: #12355B;
+}
+
+.carousel-caption > p:first-of-type {
+  font-size: 1.75rem;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #12355B;
+  text-align: justify;
+}
+
+#introduction, #digital {
+  max-width: 1024px;
+  margin: 0 auto;
+  /*background-color: #1D252C;*/
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color: #f8f9fa;
+  position: relative;
+  bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.footer > p {
+  max-width: 1024px;
+  text-align: left;
+  margin: 0 auto;
+  color: #12355B;
+  font-size: 0.85rem;
+}
+
+.dropdown-toggle:hover {
+  color: rgba(0,0,0,.7);
+}
+
+@media (min-width: 576px) {
+  .dropdown-toggle {
+    color: rgba(0,0,0,.5);
+    padding: 8px 0 8px 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdown-toggle {
+    padding: 8px;
+  }
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+  border: none;
+  z-index: 1;
+  position: fixed;
+}
+
+.dropdown-menu.show {
+  padding-left: 8px;
+}
+
+.dropdown-menu.show .snd-level {
+  padding-left: 16px;
+}
+
+.carousel-indicators li {
+  background-color:#f8f9fa;
+
+}
+
+.carousel-indicators .active {
+  background-color: #12355B;
+}
+
+.introImg {
+  width: 100%;
+  max-width: 1000px;
+}
