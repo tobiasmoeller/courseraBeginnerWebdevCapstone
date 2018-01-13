@@ -149,6 +149,15 @@ footer {
   color: rgba(0,0,0,.7);
 }
 
+.dropdown-item {
+  color: rgba(0,0,0,.5);
+  padding: 0.25rem 0;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  color: rgba(0,0,0,.7);
+}
 
 .dropdown-menu {
   background-color: #f8f9fa;
