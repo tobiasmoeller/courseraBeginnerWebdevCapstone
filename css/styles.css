@@ -5,7 +5,7 @@ body {
   background-color: #e9f7ff;
 }
 
-.main {
+main {
   flex: 1;
   max-width: 1024px;
   margin: 0 auto;
@@ -61,38 +61,38 @@ h1 {
   border-bottom: 1px solid #12355B;
 }
 
-.main > p:first-of-type {
+main > p:first-of-type {
   padding-top: 8px;
 }
 
-.main p {
+main p {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.main h1 {
+main h1 {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.main h2 {
+main h2 {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.main h3 {
-  padding-left: 8px;
-  padding-right: 8px;
-  color: #12355B;
-}
-
-.main h4 {
+main h3 {
   padding-left: 8px;
   padding-right: 8px;
   color: #12355B;
 }
 
-.main figcaption {
+main h4 {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #12355B;
+}
+
+main figcaption {
   padding-right: 8px;
   padding-left: 8px;
 }
@@ -131,7 +131,7 @@ footer {
   padding-right: 5px;
 }
 
-.footer > p {
+footer > p {
   max-width: 1024px;
   text-align: left;
   margin: 0 auto;
@@ -206,27 +206,27 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  .main p {
+  main p {
     padding: 0;
   }
 
-  .main h1 {
+  main h1 {
     padding: 0;
   }
 
-  .main h2 {
+  main h2 {
     padding: 0;
   }
 
-  .main h3{
+  main h3{
     padding: 0;
   }
 
-  .main h4 {
+  main h4 {
     padding: 0;
   }
 
-  .main figcaption {
+  main figcaption {
     padding: 0;
   }
 
